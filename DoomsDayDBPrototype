@@ -1,0 +1,102 @@
+USE [Master]
+GO
+CREATE DATABASE [DoomsDay]
+
+GO
+
+USE DoomsDay
+
+GO
+
+CREATE TABLE Members(
+	MemberID INT NOT NULL PRIMARY KEY,
+	MembersFirstName VARCHAR(50) NOT NULL,
+	MembersLastName VARCHAR(50) NOT NULL,
+	Gender CHAR(1) NOT NULL
+	CHECK (Gender = 'M' OR Gender = 'F'),
+	DateJoined DATETIME NOT NULL
+	Check (DateJoined !> DateOfDeath AND DateJoined !< DateOfBirth),
+	DateOfBirth DATETIME NOT NULL,
+	DateOfDeath DATETIME
+	CHECK (DateOfDeath !< DateOfBirth),
+	QuarterID INT NOT NULL );
+
+
+CREATE TABLE Units(
+	UnitID INT NOT NULL PRIMARY KEY,
+	UnitName VARCHAR (50) NOT NULL,
+	Affiliation VARCHAR (50) NOT NULL );
+
+
+CREATE TABLE Hostile(
+	HostileID INT NOT NULL PRIMARY KEY,
+	HostileName VARCHAR (50) NOT NULL,
+	HostileThreatLevel INT NOT NULL
+	CHECK (HostileThreatLevel = 1 OR HostileThreatLevel <= 5 ),
+	HostileDescription VARCHAR (50) NOT NULL );
+
+
+CREATE TABLE Zones(
+	ZoneID INT NOT NULL PRIMARY KEY,
+	ZoneName VARCHAR (50) NOT NULL,
+	ZoneDescription VARCHAR (50) NOT NULL );
+
+CREATE TABLE LivingQuarters(
+	QuartersID INT NOT NULL PRIMARY KEY,
+	ZoneID INT NOT NULL);
+
+CREATE TABLE ZoneResources(
+	ZoneResourcesID INT NOT NULL PRIMARY KEY,
+	ZoneResourcesDescription VARCHAR (50) NOT NULL,
+	ZoneResourcesType VARCHAR (50) NOT NULL,
+	Quantity INT NOT NULL
+	CHECK (Quantity !< 0),
+	ZoneID INT NOT NULL );
+
+
+CREATE TABLE Jobs(
+	JobsID INT NOT NULL PRIMARY KEY,
+	JobsName VARCHAR(50) NOT NULL,
+	JobsDescription VARCHAR (100) NOT NULL );
+
+
+
+
+CREATE TABLE MembersJob(
+	MembersID INT,
+	JobsID INT );
+
+
+
+CREATE TABLE UnitsMembers(
+	MemberID INT NOT NULL,
+	UnitID INT NOT NULL );
+
+
+CREATE TABLE Raid(
+	RaidID INT NOT NULL PRIMARY KEY,
+	RaidStartDate DATETIME NOT NULL
+	CHECK(RaidStartDate !> RaidEndDate),
+	RaidEndDate DATETIME NOT NULL,
+	UnitID INT NOT NULL );
+
+
+CREATE TABLE PowerSources(
+	PowerSourcesID INT NOT NULL PRIMARY KEY,
+	SourceName VARCHAR (50) NOT NULL,
+	SourceType VARCHAR (50) NOT NULL,
+	ProductionCapacity VARCHAR (10),
+	ZoneID INT NOT NULL );
+
+
+CREATE TABLE Locations(
+	LocationID INT NOT NULL PRIMARY KEY,
+	UnitID INT NOT NULL,
+	HostileID INT NOT NULL,
+	ZoneID INT NOT NULL,
+	RaidID INT NOT NULL,
+	LocationType VARCHAR (50) NOT NULL,
+	LocationName VARCHAR (50) NOT NULL );
+
+
+
