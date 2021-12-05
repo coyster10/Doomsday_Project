@@ -51,6 +51,7 @@ CREATE TABLE dbo.Inventory(
 	ItemType VARCHAR (50) NOT NULL,
 	Quantity INT NOT NULL
 	CHECK (Quantity !< 0),
+	EquivalentValue INT NOT NULL,
 	ZoneID INT FOREIGN KEY REFERENCES Zones(ZoneID) );
 
 
