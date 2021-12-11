@@ -29,6 +29,29 @@ INSERT [dbo].[Units] ([UnitID], [UnitName], [Affiliation]) VALUES (2012, N'6th G
 INSERT [dbo].[Units] ([UnitID], [UnitName], [Affiliation]) VALUES (2013, N'99th Gear retrieval Company', N'Gear Corps')
 SET IDENTITY_INSERT [dbo].[Units] OFF
 GO
+SET IDENTITY_INSERT [dbo].[Raid] ON 
+
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5001, CAST(N'2022-02-04T00:00:00.000' AS DateTime), CAST(N'2022-05-16T00:00:00.000' AS DateTime), 2001)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5002, CAST(N'2022-02-01T00:00:00.000' AS DateTime), CAST(N'2022-05-25T00:00:00.000' AS DateTime), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5003, CAST(N'2022-01-12T00:00:00.000' AS DateTime), CAST(N'2022-05-13T00:00:00.000' AS DateTime), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5004, CAST(N'2022-03-11T00:00:00.000' AS DateTime), CAST(N'2022-05-17T00:00:00.000' AS DateTime), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5005, CAST(N'2022-01-27T00:00:00.000' AS DateTime), CAST(N'2022-05-15T00:00:00.000' AS DateTime), 2008)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5006, CAST(N'2022-02-24T00:00:00.000' AS DateTime), CAST(N'2022-05-02T00:00:00.000' AS DateTime), 2009)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5007, CAST(N'2022-03-21T00:00:00.000' AS DateTime), CAST(N'2022-06-26T00:00:00.000' AS DateTime), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5008, CAST(N'2022-02-21T00:00:00.000' AS DateTime), CAST(N'2022-06-05T00:00:00.000' AS DateTime), 2001)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5009, CAST(N'2022-01-28T00:00:00.000' AS DateTime), CAST(N'2022-06-28T00:00:00.000' AS DateTime), 2008)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5010, CAST(N'2022-02-14T00:00:00.000' AS DateTime), CAST(N'2022-05-25T00:00:00.000' AS DateTime), 2013)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5011, CAST(N'2022-03-10T00:00:00.000' AS DateTime), CAST(N'2022-05-14T00:00:00.000' AS DateTime), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5012, CAST(N'2022-01-29T00:00:00.000' AS DateTime), CAST(N'2022-05-08T00:00:00.000' AS DateTime), 2012)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5013, CAST(N'2022-03-06T00:00:00.000' AS DateTime), CAST(N'2022-06-07T00:00:00.000' AS DateTime), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5014, CAST(N'2022-04-04T00:00:00.000' AS DateTime), CAST(N'2022-06-14T00:00:00.000' AS DateTime), 2013)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5015, CAST(N'2022-03-29T00:00:00.000' AS DateTime), CAST(N'2022-06-08T00:00:00.000' AS DateTime), 2006)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5016, CAST(N'2022-03-15T00:00:00.000' AS DateTime), CAST(N'2022-06-28T00:00:00.000' AS DateTime), 2008)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5017, CAST(N'2022-04-24T00:00:00.000' AS DateTime), CAST(N'2022-06-24T00:00:00.000' AS DateTime), 2013)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5018, CAST(N'2022-04-15T00:00:00.000' AS DateTime), CAST(N'2022-05-14T00:00:00.000' AS DateTime), 2010)
+SET IDENTITY_INSERT [dbo].[Raid] OFF
+GO
+
 SET IDENTITY_INSERT [dbo].[Hostile] ON 
 
 INSERT [dbo].[Hostile] ([HostileID], [HostileName], [HostileThreatLevel], [HostileDescription]) VALUES (1, N'Road Rats', 3, N'Active,')
