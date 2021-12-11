@@ -14,8 +14,8 @@ CREATE TABLE dbo.Members(
 	MembersLastName VARCHAR(50) NOT NULL,
 	Gender CHAR(1) NOT NULL
 	CHECK (Gender = 'M' OR Gender = 'F'),
-	DateJoined DATETIME NOT NULL,
-	DateOfBirth DATETIME NOT NULL,
+	DateJoined DATE NOT NULL,
+	DateOfBirth DATE NOT NULL,
 	DateOfDeath DATETIME,
 	QuarterID INT NOT NULL, CONSTRAINT ch_Date_Joined CHECK( 
 	(DateJoined !> DateOfDeath AND DateJoined !< DateOfBirth)), CONSTRAINT ck_Death_Date CHECK(
@@ -76,8 +76,8 @@ CREATE TABLE dbo.UnitsMembers(
 
 CREATE TABLE dbo.Raid(
 	RaidID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	RaidStartDate DATETIME NOT NULL,
-	RaidEndDate DATETIME NOT NULL,
+	RaidStartDate DATE NOT NULL,
+	RaidEndDate DATE NOT NULL,
 	UnitID INT FOREIGN KEY REFERENCES Units(UnitID), CONSTRAINT ch_Raid_Date CHECK (
 	(RaidStartDate !> RaidEndDate)) );
 
