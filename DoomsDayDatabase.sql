@@ -12,13 +12,13 @@ GO
 
 CREATE TABLE dbo.Units(
 	UnitID INT IDENTITY(2000,1) NOT NULL PRIMARY KEY,
-	UnitName VARCHAR (50) NOT NULL,
+	UnitName VARCHAR (50) UNIQUE NOT NULL,
 	Affiliation VARCHAR (50) NOT NULL );
 
 
 CREATE TABLE dbo.Hostile(
 	HostileID INT IDENTITY(3000,1) NOT NULL PRIMARY KEY,
-	HostileName VARCHAR (50) NOT NULL,
+	HostileName VARCHAR (50) UNIQUE NOT NULL,
 	HostileThreatLevel INT NOT NULL
 	CHECK (HostileThreatLevel = 1 OR HostileThreatLevel <= 5 ),
 	HostileDescription VARCHAR (50) NOT NULL );
@@ -26,7 +26,7 @@ CREATE TABLE dbo.Hostile(
 
 CREATE TABLE dbo.SafeHouses(
 	SafehouseID INT IDENTITY(8000,1) NOT NULL PRIMARY KEY,
-	SafeHouseName VARCHAR (50) NOT NULL,
+	SafeHouseName VARCHAR (50) UNIQUE NOT NULL,
 	SafehouseType VARCHAR (50) NOT NULL,
 	SafeHouseDescription VARCHAR (50));
 
@@ -61,7 +61,7 @@ CREATE TABLE dbo.Inventory(
 
 CREATE TABLE dbo.Jobs(
 	JobsID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	JobsName VARCHAR(50) NOT NULL,
+	JobsName VARCHAR(50) UNIQUE NOT NULL,
 	JobsDescription VARCHAR (100) NOT NULL );
 
 
@@ -115,3 +115,4 @@ CREATE TABLE dbo.SafeHouseLocations(
 CREATE TABLE dbo.UnitLocations(
 	LocationID INT FOREIGN KEY REFERENCES Locations(LocationID),
 	UnitID INT FOREIGN KEY REFERENCES Units(UnitID));
+
