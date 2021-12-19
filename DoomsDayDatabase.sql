@@ -25,9 +25,9 @@ CREATE TABLE dbo.Hostile(
 
 
 CREATE TABLE dbo.SafeHouses(
-	SafehouseID INT IDENTITY(8000,1) NOT NULL PRIMARY KEY,
+	SafeHouseID INT IDENTITY(8000,1) NOT NULL PRIMARY KEY,
 	SafeHouseName VARCHAR (50) UNIQUE NOT NULL,
-	SafehouseType VARCHAR (50) NOT NULL,
+	SafeHouseType VARCHAR (50) NOT NULL,
 	SafeHouseDescription VARCHAR (50));
 
 CREATE TABLE dbo.LivingQuarters(
