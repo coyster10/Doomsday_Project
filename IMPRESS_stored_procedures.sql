@@ -19,7 +19,7 @@ WHERE Hostile.HostileName LIKE '%' + @hostileName + '%' OR Hostile.HostileThreat
 
 GO
 
-USE [DoomsDay]
+USE [IMPRESS]
 
 GO
 
@@ -55,7 +55,7 @@ WHERE Raid.RaidID = @raidID OR ((Raid.RaidStartDate > @s) AND (Raid.RaidEndDate 
 
 GO
 
-USE [DoomsDay]
+USE [IMPRESS]
 GO
 
 CREATE PROCEDURE unit_members_lookup
@@ -73,7 +73,7 @@ WHERE Units.UnitName LIKE '%' + @unitName + '%' OR Units.UnitID = @unitID;
 
 GO
 
-USE [DoomsDay]
+USE [IMPRESS]
 GO
 
 CREATE PROCEDURE safehouse_location_lookup
@@ -91,7 +91,7 @@ WHERE SafeHouses.SafeHouseName LIKE '%' + @shName + '%' OR SafeHouses.SafehouseT
 
 GO
 
-USE [DoomsDay]
+USE [IMPRESS]
 GO
 
 CREATE PROCEDURE member_job_lookup
