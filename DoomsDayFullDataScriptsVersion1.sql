@@ -354,7 +354,7 @@ INSERT [dbo].[SafeHouseLocations] ([LocationID], [SafehouseID]) VALUES (6, 8000)
 GO
 SET IDENTITY_INSERT [dbo].[Jobs] ON 
 
-INSERT [dbo].[Jobs] ([JobsID], [JobsName], [JobsDescription]) VALUES (1, N'Solder', N'Apart of a military organization,')
+INSERT [dbo].[Jobs] ([JobsID], [JobsName], [JobsDescription]) VALUES (1, N'soldier', N'Apart of a military organization,')
 INSERT [dbo].[Jobs] ([JobsID], [JobsName], [JobsDescription]) VALUES (2, N'electrician', N'zone electrician')
 INSERT [dbo].[Jobs] ([JobsID], [JobsName], [JobsDescription]) VALUES (3, N'Construction', N'Zone Construction worker')
 INSERT [dbo].[Jobs] ([JobsID], [JobsName], [JobsDescription]) VALUES (4, N'Police Officer', N'Zone police')
