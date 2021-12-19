@@ -1,4 +1,4 @@
-USE [DoomsDay]
+USE [IMPRESS]
 GO
 
 CREATE PROCEDURE hostile_lookup
