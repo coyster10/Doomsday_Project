@@ -19,12 +19,12 @@ SET IDENTITY_INSERT [dbo].[Units] OFF
 GO
 SET IDENTITY_INSERT [dbo].[SafeHouses] ON 
 
-INSERT [dbo].[SafeHouses] ([SafehouseID], [SafeHouseName], [SafehouseType], [SafeHouseDescription]) VALUES (8000, N'Safe House 1', N'CR', N'Refugee center')
-INSERT [dbo].[SafeHouses] ([SafehouseID], [SafeHouseName], [SafehouseType], [SafeHouseDescription]) VALUES (8001, N'Safe House 2', N'CR', N'Stoping point')
-INSERT [dbo].[SafeHouses] ([SafehouseID], [SafeHouseName], [SafehouseType], [SafeHouseDescription]) VALUES (8002, N'Safe House 3', N'GR', N'surplus storage')
-INSERT [dbo].[SafeHouses] ([SafehouseID], [SafeHouseName], [SafehouseType], [SafeHouseDescription]) VALUES (8003, N'Safe House 5', N'GR', N'hospital')
-INSERT [dbo].[SafeHouses] ([SafehouseID], [SafeHouseName], [SafehouseType], [SafeHouseDescription]) VALUES (8004, N'Safe House 6', N'GR', N'military base')
-INSERT [dbo].[SafeHouses] ([SafehouseID], [SafeHouseName], [SafehouseType], [SafeHouseDescription]) VALUES (8005, N'Safe House 7', N'CR', N'Hospital/water treatment')
+INSERT [dbo].[SafeHouses] ([SafeHouseID], [SafeHouseName], [SafeHouseType], [SafeHouseDescription]) VALUES (8000, N'Safe House 1', N'CR', N'Refugee center')
+INSERT [dbo].[SafeHouses] ([SafeHouseID], [SafeHouseName], [SafeHouseType], [SafeHouseDescription]) VALUES (8001, N'Safe House 2', N'CR', N'Stoping point')
+INSERT [dbo].[SafeHouses] ([SafeHouseID], [SafeHouseName], [SafeHouseType], [SafeHouseDescription]) VALUES (8002, N'Safe House 3', N'GR', N'Surplus storage')
+INSERT [dbo].[SafeHouses] ([SafeHouseID], [SafeHouseName], [SafeHouseType], [SafeHouseDescription]) VALUES (8003, N'Safe House 5', N'GR', N'Hospital')
+INSERT [dbo].[SafeHouses] ([SafeHouseID], [SafeHouseName], [SafeHouseType], [SafeHouseDescription]) VALUES (8004, N'Safe House 6', N'GR', N'Military base')
+INSERT [dbo].[SafeHouses] ([SafeHouseID], [SafeHouseName], [SafeHouseType], [SafeHouseDescription]) VALUES (8005, N'Safe House 7', N'CR', N'Hospital/water treatment')
 SET IDENTITY_INSERT [dbo].[SafeHouses] OFF
 GO
 SET IDENTITY_INSERT [dbo].[LivingQuarters] ON 
@@ -132,21 +132,21 @@ INSERT [dbo].[UnitsMembers] ([MemberID], [UnitID]) VALUES (1059, 2001)
 GO
 SET IDENTITY_INSERT [dbo].[Raid] ON 
 
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5001, CAST(N'2022-02-04' AS Date), CAST(N'2022-05-16' AS Date), 2001)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5002, CAST(N'2022-02-01' AS Date), CAST(N'2022-05-25' AS Date), 2002)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5003, CAST(N'2022-01-12' AS Date), CAST(N'2022-05-13' AS Date), 2002)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5004, CAST(N'2022-03-11' AS Date), CAST(N'2022-05-17' AS Date), 2002)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5005, CAST(N'2022-01-27' AS Date), CAST(N'2022-05-15' AS Date), 2008)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5006, CAST(N'2022-02-24' AS Date), CAST(N'2022-05-02' AS Date), 2009)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5007, CAST(N'2022-03-21' AS Date), CAST(N'2022-06-26' AS Date), 2002)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5008, CAST(N'2022-02-21' AS Date), CAST(N'2022-06-05' AS Date), 2001)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5009, CAST(N'2022-01-28' AS Date), CAST(N'2022-06-28' AS Date), 2008)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5011, CAST(N'2022-03-10' AS Date), CAST(N'2022-05-14' AS Date), 2002)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5012, CAST(N'2022-01-29' AS Date), CAST(N'2022-05-08' AS Date), 2012)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5013, CAST(N'2022-03-06' AS Date), CAST(N'2022-06-07' AS Date), 2002)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5015, CAST(N'2022-03-29' AS Date), CAST(N'2022-06-08' AS Date), 2006)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5016, CAST(N'2022-03-15' AS Date), CAST(N'2022-06-28' AS Date), 2008)
-INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5018, CAST(N'2022-04-15' AS Date), CAST(N'2022-05-14' AS Date), 2010)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5001, CAST(N'2021-02-04' AS Date), CAST(N'2021-05-16' AS Date), 2001)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5002, CAST(N'2021-02-01' AS Date), CAST(N'2021-05-25' AS Date), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5003, CAST(N'2021-01-12' AS Date), CAST(N'2021-05-13' AS Date), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5004, CAST(N'2021-03-11' AS Date), CAST(N'2021-05-17' AS Date), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5005, CAST(N'2021-01-27' AS Date), CAST(N'2021-05-15' AS Date), 2008)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5006, CAST(N'2021-02-24' AS Date), CAST(N'2021-05-02' AS Date), 2009)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5007, CAST(N'2021-03-21' AS Date), CAST(N'2021-06-26' AS Date), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5008, CAST(N'2021-02-21' AS Date), CAST(N'2021-06-05' AS Date), 2001)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5009, CAST(N'2021-01-28' AS Date), CAST(N'2021-06-28' AS Date), 2008)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5011, CAST(N'2021-03-10' AS Date), CAST(N'2021-05-14' AS Date), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5012, CAST(N'2021-01-29' AS Date), CAST(N'2021-05-08' AS Date), 2012)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5013, CAST(N'2021-03-06' AS Date), CAST(N'2021-06-07' AS Date), 2002)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5015, CAST(N'2021-03-29' AS Date), CAST(N'2021-06-08' AS Date), 2006)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5016, CAST(N'2021-03-15' AS Date), CAST(N'2021-06-28' AS Date), 2008)
+INSERT [dbo].[Raid] ([RaidID], [RaidStartDate], [RaidEndDate], [UnitID]) VALUES (5018, CAST(N'2021-04-15' AS Date), CAST(N'2021-05-14' AS Date), 2010)
 SET IDENTITY_INSERT [dbo].[Raid] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Hostile] ON 
