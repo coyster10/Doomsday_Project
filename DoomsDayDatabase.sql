@@ -1,10 +1,10 @@
 USE [Master]
 GO
-CREATE DATABASE [DoomsDay]
+CREATE DATABASE [IMPRESS]
 
 GO
 
-USE DoomsDay
+USE [IMPRESS]
 
 GO
 
