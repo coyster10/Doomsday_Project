@@ -7,7 +7,7 @@ FROM
 WHERE
 	DateOFDeath is null;
 
-
+GO
 CREATE VIEW Members_Assigned_Jobs_View AS 
 SELECT
 	Members.MembersFirstName,
@@ -20,7 +20,7 @@ FROM
 WHERE
 	DateOFDeath is null;
 
-
+GO
 CREATE VIEW Active_Engagements_View AS
 SELECT
 	Units.UnitName,
@@ -34,7 +34,7 @@ FROM
 	Locations ON UnitLocations.LocationID = Locations.LocationID INNER JOIN
 	Hostile ON Locations.HostileID = Hostile.HostileID;
 
-
+GO
 CREATE VIEW Inventory_Item_Location_View AS
 SELECT
 	Inventory.ItemDescription,
@@ -47,7 +47,7 @@ FROM
 	SafeHouseLocations ON SafeHouses.SafehouseID = SafeHouseLocations.SafehouseID INNER JOIN
 	Locations ON SafeHouseLocations.LocationID = Locations.LocationID;
 
-
+GO
 CREATE VIEW Unit_Raid_Engagements_View AS 
 SELECT
 	Units.UnitName,
