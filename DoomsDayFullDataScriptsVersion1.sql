@@ -333,6 +333,22 @@ INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [
 INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10173, N'Squat Rack', N'Exercise', 4, 149, 8001)
 INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10174, N'Bench Press Bench', N'Exercise', 3, 40, 8002)
 INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10175, N'Bowflex Cable Machine', N'Exercise', 2, 298, 8002)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10176, N'M1 Abrams Tank', N'Military Vehicle', 10, 1242000, 8006)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10177, N'M2 Bradley ', N'Military Vehicle', 15, 633200, 8006)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10178, N'Humvee', N'Military Vehicle', 50, 44000, 8002)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10179, N'Military Transport Truck', N'Military Vehicle', 50, 34000, 8003)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10180, N'M16', N'Rifle', 220, 140, 8006)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10181, N'AK-47', N'Rifle', 450, 160, 8005)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10182, N'Steyr AUG', N'Rifle', 45, 410, 8004)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10183, N'FN SCAR', N'Rifle', 25, 580, 8003)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10184, N'M4 Carbine', N'Rifle', 325, 194, 8000)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10185, N'Beretta M9', N'Pistol', 275, 120, 8006)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10186, N'GLOCK 19', N'Pistol', 250, 111, 8005)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10187, N'Sig Sauer p320', N'Pistol', 45, 100, 8004)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10188, N'Sig Sauer M17', N'Pistol', 170, 136, 8002)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10189, N'5.56 Ammo (1000rds)', N'Ammo', 200, 60, 8006)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10190, N'9mm Ammo (1000rds)', N'Ammo', 750, 66, 8004)
+INSERT [dbo].[Inventory] ([ItemID], [ItemDescription], [ItemType], [Quantity], [EquivalentValue], [SafeHouseID]) VALUES (10191, N'7.62 Ammo(1000rds)', N'Ammo', 320, 80, 8005)
 SET IDENTITY_INSERT [dbo].[Inventory] OFF
 GO
 SET IDENTITY_INSERT [dbo].[PowerSources] ON 
