@@ -15,7 +15,7 @@ SELECT
 	Jobs.JobsName
 FROM
 	Members INNER JOIN
-    MembersJob ON Members.MemberID = MembersJob.MembersID INNER JOIN
+    MembersJob ON Members.MemberID = MembersJob.MemberID INNER JOIN
     Jobs ON MembersJob.JobsID = Jobs.JobsID
 WHERE
 	DateOFDeath is null;
