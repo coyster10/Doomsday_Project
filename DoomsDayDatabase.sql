@@ -68,7 +68,7 @@ CREATE TABLE dbo.Jobs(
 
 
 CREATE TABLE dbo.MembersJob(
-	MembersID INT FOREIGN KEY REFERENCES Members(MemberID) ,
+	MemberID INT FOREIGN KEY REFERENCES Members(MemberID) ,
 	JobsID INT FOREIGN KEY REFERENCES Jobs(JobsID)  );
 
 
