@@ -100,17 +100,13 @@ CREATE TABLE dbo.Locations(
 	LocationType VARCHAR (50) NOT NULL,
 	LocationName VARCHAR (50) NOT NULL,
 	LocationStreet VARCHAR (50) NOT NULL,
-	LocationCityState VARCHAR (50) NOT NULL);
+	LocationCityState VARCHAR (50) NOT NULL,
+	SafehouseID INT FOREIGN KEY REFERENCES SafeHouses(SafeHouseID));
 
 
 CREATE TABLE dbo.RaidLocations(
 	LocationID INT FOREIGN KEY REFERENCES Locations(LocationID),
 	RaidID INT FOREIGN KEY REFERENCES Raid(RaidID));
-
-
-CREATE TABLE dbo.SafeHouseLocations(
-	LocationID INT FOREIGN KEY REFERENCES Locations(LocationID),
-	SafehouseID INT FOREIGN KEY REFERENCES SafeHouses(SafeHouseID)); 
 
 CREATE TABLE dbo.UnitLocations(
 	LocationID INT FOREIGN KEY REFERENCES Locations(LocationID),
